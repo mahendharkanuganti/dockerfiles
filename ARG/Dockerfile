@@ -5,5 +5,5 @@ ARG COURSE=Docker
 ARG TRAINER=Mahi
 ARG DURATION=120Days
 ENV Duration={DURATION}
-RUN echo "Course is" ${COURSE}, Trainer is: ${TRAINER}, Duration is: ${DURATION}"
+RUN echo "Course is: ${COURSE}, Trainer is: ${TRAINER}, Duration is: ${DURATION}"
 CMD [ "sleep", "1000" ]
