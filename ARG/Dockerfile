@@ -4,6 +4,6 @@ FROM almalinux:${version:-8}
 ARG COURSE=Docker
 ARG TRAINER=Mahi
 ARG Duration=120Days
-ENV DURATION={Duration}
+ENV DURATION=${Duration}
 RUN echo "Course is: ${COURSE}, Trainer is: ${TRAINER}, Duration is: ${DURATION}"
 CMD [ "sleep", "100" ]
